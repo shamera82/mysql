@@ -18,7 +18,7 @@ mysql --local-infile=1 -u root -p
 
 
 #### inner join query
-```sh
+```sql
 select * from vms left join retention on vms.vmname = retention.FRIENDLYNAME union all select * from vms right join retention on vms.vmname = retention.FRIENDLYNAME where vms.vmname is null;
 
 # create table to store data
