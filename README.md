@@ -15,3 +15,10 @@ mysql --local-infile=1 -u root -p
 #Query OK, 435 rows affected, 438 warnings (0.22 sec)
 #Records: 435  Deleted: 0  Skipped: 0  Warnings: 438
 ```
+
+
+#### inner join query
+```sh
+select * from vms left join retention on vms.vmname = retention.FRIENDLYNAME union all select * from vms right join retention on vms.vmname = retention.FRIENDLYNAME where vms.vmname is null;
+
+```
