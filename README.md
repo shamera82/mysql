@@ -97,3 +97,5 @@ mysql --local-infile=1 -u root -p
 #Query OK, 435 rows affected, 438 warnings (0.22 sec)
 #Records: 435  Deleted: 0  Skipped: 0  Warnings: 438
 ```
+
+#### Referance : https://www.prisma.io/dataguide/mysql/reading-and-querying-data/joining-tables
